@@ -9,7 +9,7 @@ const Worker = () =>{
     return(
         <div>
             <div className="">
-        <div className="fixed hidden lg:block left-0 top-0 top-0 bottom-0 w-full">
+            <div className="fixed hidden lg:block left-0 top-0 bottom-0 w-32">
             <SideHamburger />
         </div>
         <div className="container mx-auto">
