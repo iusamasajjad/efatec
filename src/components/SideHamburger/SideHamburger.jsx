@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
 import bar from "../../assets/images/bar.png";
-import { gsap } from "gsap";
+
 const SideHamburger =()=>{
 
     return (
