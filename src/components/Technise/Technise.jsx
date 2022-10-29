@@ -26,7 +26,7 @@ const Technise = () => {
     },[])
     return (
         <div>
-            <div className="flex lg:flex-row flex-col justify-center items-center lg:items-inherit">
+            <div className="flex lg:flex-row flex-col justify-center">
                 <div className="bg-yellow w-1/2">
                 </div>
                 <div className="lg:mx-10 py-10">
@@ -34,8 +34,8 @@ const Technise = () => {
                         <p className="text-xl text-black font-extrabold">TECHNISCHE INFORMATIONEN</p>
                     </div>
                     <div>
-                        <p data-aos="fade-left" className="text-gray-500">Antrieb</p>
-                        <div data-aos="fade-right" className="flex flex-col lg:flex-row items-center">
+                        <p data-aos="fade-left" className="text-gray-500 mt-3">Antrieb</p>
+                        <div data-aos="fade-right" className="flex flex-row lg:flex-row justify-center lg:justify-start items-center">
                             <div className="text-center flex items-center">
                                 <div ref={flip}>
                                     <img className="mx-auto" src={engine} alt="engine" />
@@ -44,7 +44,7 @@ const Technise = () => {
                                 </div>
                                 <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
                             </div>
-                            <div className="text-center flex bg-gray-100 px-8 py-4 mt-4 lg:mt-0 items-center lg:ml-3">
+                            <div className="text-center flex bg-gray-100 px-8 py-4 mt-4 lg:mt-0 items-center ml-3">
                                 <div>
                                     <img className="mx-auto" src={padal} alt="engine" />
                                     <p className="text-lg font-bold text-green-400 py-3">16:1</p>
@@ -56,7 +56,7 @@ const Technise = () => {
                     </div>
                     <div className="mt-12">
                         <p data-aos="fade-left" className="text-gray-500">Abmessungen</p>
-                        <div data-aos="fade-right" className="flex flex-col lg:flex-row items-center">
+                        <div data-aos="fade-right" className="flex flex-row justify-center lg:justify-start lg:flex-row items-center">
                             <div className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={H} alt="engine" />
