@@ -12,8 +12,8 @@ function App() {
     <div>
       <BrowserRouter>
       <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/Worker" element={<Worker />} />
+      <Route exact path="/" element={<LandingPage />} />
+      <Route exact path="/Worker" element={<Worker />} />
         
         </Routes>
         </BrowserRouter>

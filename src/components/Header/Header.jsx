@@ -15,7 +15,7 @@ const Header =()=>{
                     <li className="mr-8 border-b border-gray-700 hidden lg:block font-bold">INFO@EFATEC.DE</li>
                     <div className="flex items-center">
                     <li className="mr-8 font-bold">
-                    <Link to ="/Worker">KONTAKT</Link>
+                    <Link to ={"/Worker"}>KONTAKT</Link>
                     </li>
                     <li className="w-8 flex justify-center items-center text-white h-8 bg-green-600 rounded-full"> > </li>
                     </div>

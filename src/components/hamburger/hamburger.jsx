@@ -16,7 +16,7 @@ const Hamburger = () => {
                 <ul className="flex items-center">
                     <div className="flex items-center">
                         <li className="mr-3 font-bold">
-                    <Link to ="/Worker">KONTAKT</Link>
+                    <Link to ={"/Worker"}>KONTAKT</Link>
                     </li>
                         <li className="w-8 flex justify-center items-center text-white h-8 bg-green-600 rounded-full"> > </li>
                     </div>
