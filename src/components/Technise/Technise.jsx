@@ -11,10 +11,22 @@ import download from "../../assets/images/download.png";
 import envelop from "../../assets/images/envelop.png";
 import call from "../../assets/images/call.png";
 import arrow from "../../assets/images/white_arrow.png";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { Power3 } from "gsap";
 const Technise = () => {
+
+    const flip =useRef(false);
+
+    useEffect(()=>{
+        gsap.to(flip.current,.8,{
+            rotation: "360",
+            ease:Power3.easeOut
+        })
+    },[])
     return (
         <div>
-            <div className="flex">
+            <div className="flex lg:flex-row flex-col justify-center items-center lg:items-inherit">
                 <div className="bg-yellow w-1/2">
                 </div>
                 <div className="lg:mx-10 py-10">
@@ -22,10 +34,10 @@ const Technise = () => {
                         <p className="text-xl text-black font-extrabold">TECHNISCHE INFORMATIONEN</p>
                     </div>
                     <div>
-                        <p className="text-gray-500">Antrieb</p>
-                        <div className="flex flex-col lg:flex-row items-center">
+                        <p data-aos="fade-left" className="text-gray-500">Antrieb</p>
+                        <div data-aos="fade-right" className="flex flex-col lg:flex-row items-center">
                             <div className="text-center flex items-center">
-                                <div>
+                                <div ref={flip}>
                                     <img className="mx-auto" src={engine} alt="engine" />
                                     <p className="text-lg font-bold text-black">1200 WATT</p>
                                     <p className="text-sm text-gray-500">MOTOR</p>
@@ -43,8 +55,8 @@ const Technise = () => {
 
                     </div>
                     <div className="mt-12">
-                        <p className="text-gray-500">Abmessungen</p>
-                        <div className="flex flex-col lg:flex-row items-center">
+                        <p data-aos="fade-left" className="text-gray-500">Abmessungen</p>
+                        <div data-aos="fade-right" className="flex flex-col lg:flex-row items-center">
                             <div className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={H} alt="engine" />
@@ -63,9 +75,9 @@ const Technise = () => {
                         </div>
                     </div>
                     <div className="mt-12">
-                        <p className="text-gray-500">Batteriesystem</p>
+                        <p data-aos="fade-left" className="text-gray-500">Batteriesystem</p>
                         <div className="flex flex-col items-center lg:flex-row">
-                            <div className="text-center flex items-center">
+                            <div data-aos="fade-right" className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={dable_bat} alt="engine" />
                                     <p className="text-lg font-bold text-black">24V, 2X 12V</p>
@@ -73,7 +85,7 @@ const Technise = () => {
                                 </div>
                                 <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
                             </div>
-                            <div className="text-center flex px-8 py-4 items-center mt-3 lg:mt-0 lg:ml-3">
+                            <div data-aos="fade-right" className="text-center flex px-8 py-4 items-center mt-3 lg:mt-0 lg:ml-3">
                                 <div>
                                     <img className="mx-auto" src={dable_bat} alt="engine" />
                                     <p className="text-lg font-bold text-black">120 AH</p>
@@ -81,7 +93,7 @@ const Technise = () => {
                                 </div>
                                 <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
                             </div>
-                            <div className="text-center flex items-center mt-3 lg:mt-0 lg:ml-3">
+                            <div data-aos="fade-left" className="text-center flex items-center mt-3 lg:mt-0 lg:ml-3">
                                 <div>
                                     <img className="mx-auto" src={H} alt="engine" />
                                     <p className="text-sm font-bold text-black">WARTUNGSFREIE GEL BATTERIEN</p>
@@ -89,7 +101,7 @@ const Technise = () => {
                                 </div>
                                 <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
                             </div>
-                            <div className="text-center flex px-8 py-4 items-center mt-3 lg:mt-0 lg:ml-3">
+                            <div data-aos="fade-left" className="text-center flex px-8 py-4 items-center mt-3 lg:mt-0 lg:ml-3">
                                 <div>
                                     <img className="mx-auto" src={Seatbelt} alt="engine" />
                                     <p className="text-lg font-bold text-black">24 V 25 A</p>
@@ -99,9 +111,9 @@ const Technise = () => {
                         </div>
                     </div>
                     <div className="mt-12">
-                        <p className="text-gray-500">Leistung</p>
+                        <p data-aos="fade-left" className="text-gray-500">Leistung</p>
                         <div className="flex">
-                            <div className="text-center flex items-center">
+                            <div data-aos="fade-right" className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={wheel} alt="engine" />
                                     <p className="text-lg font-bold text-black">6 KM/H</p>
@@ -109,7 +121,7 @@ const Technise = () => {
                                 </div>
                                 <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
                             </div>
-                            <div className="text-center flex px-8 py-4 items-center ml-3">
+                            <div data-aos="fade-right" className="text-center flex px-8 py-4 items-center ml-3">
                                 <div>
                                     <img className="mx-auto" src={meter} alt="engine" />
                                     <p className="text-lg font-bold text-black">10 KM</p>
@@ -124,7 +136,7 @@ const Technise = () => {
                         <p className="text-green-600 px-4 py-8">Download Technische Zeichnung</p>
                         <img src={download} alt="download" />
                     </div>
-                    <div className="flex flex-col lg:flex-row justify-end">
+                    <div data-aos="fade-right" className="flex flex-col lg:flex-row justify-end">
                         <div className="border-t px-10 py-5 border-r">
                             <img src={envelop} alt="envolop" />
                         </div>

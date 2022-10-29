@@ -6,7 +6,9 @@ import email from "../../assets/images/email.png"
 const Location = () => {
     return (
         <div className="mt-20">
-            <div className="mx-auto">
+            <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className="mx-auto">
                 <img className="w-full" src={map} alt="map" />
             </div>
             <div  className="flex flex-col sm:flex-col md:flex-col lg:flex-row mx-auto justify-between w-4/5">

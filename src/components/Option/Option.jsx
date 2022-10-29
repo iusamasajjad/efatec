@@ -7,7 +7,7 @@ const Option = () => {
         <div>
             <div className="flex justify-center items-center mt-12">
                 <p className="text-5xl font-black text-center">OptioNEN</p>
-                <img className="w-20 relative bottom-5 left-4" src={Arrow} alt="arrow" />
+                <img data-aos="fade-right" className="w-20 relative bottom-5 left-4" src={Arrow} alt="arrow" />
             </div>
             <div className="flex justify-center">
                 <p className="text-xs">Stellen Sie Ihr Fahrzeug nach Ihren Anforderungen zusammen.</p>
@@ -35,17 +35,19 @@ const Option = () => {
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row">
-                    <div className=" ml-8">
+                    <div data-aos="flip-right" className=" ml-8">
                         <img src={electric} alt="battery" />
                     </div>
                     <div className="w-full px-4 py-4">
-                        <p className="text-sm font-bold">Erweiterte Batteriekapazität 195 Ah, anstatt 120 Ah</p>
+                       <div data-aos="fade-left">
+                       <p className="text-sm font-bold">Erweiterte Batteriekapazität 195 Ah, anstatt 120 Ah</p>
                         <p className="text-sm">Erhöhen Sie die Arbeitsdauer mit einer größeren Batteriekapazität</p>
+                       </div>
                         <div className="border-b mt-4">
 
                         </div>
                        <div className="flex border-b justify-between">
-                        <div>
+                        <div data-aos="fade-right">
                         <div>
                             <p className="text-lg font-bold">Select Option to add in Request</p>
                         </div>
@@ -63,7 +65,7 @@ const Option = () => {
                         </form>
                         </div>
                         <div>
-                        <div>
+                        <div data-aos="flip-right">
                         <button className="bg-green-600 font-bold flex flex-col items-center  w-32 text-center px-5 py-2 text-white">
                         <div className="bg-white flex justify-center w-full items-center h-20 mb-8 py-4 px-2">
                                 <img src={arrow} alt="arrow" />
@@ -77,11 +79,11 @@ const Option = () => {
                        </div>
                     </div>
                     <div className="flex">
-                    <div className="lg:w-1/5 flex flex-col justify-center items-center lg:ml-8">
+                    <div data-aos="flip-right" className="lg:w-1/5 flex flex-col justify-center items-center lg:ml-8">
                         <img width={"130px"} src={electric} alt="electric" />
                         <p className="text-black text-center text-xs font-bold">Erweiterte Batteriekapazität 195 Ah, anstatt 120 Ah</p>
                     </div>
-                    <div className="border-r pr-5">
+                    <div data-aos="flip-right" className="border-r pr-5">
                     <img width={"130px"} src={electric} alt="electric" />
                     </div>
                     </div>

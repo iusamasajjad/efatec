@@ -5,9 +5,9 @@ import co_founder from "../../assets/images/Oval.png";
 const Founder = () =>{
     return(
         <div className="mt-24">
-                <div data-aos="flip-down" className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center mx-auto">
+                <div data-aos="flip-down" data-aos-duration="2000" className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center mx-auto">
                     <div className="mx-10">
-                        <img style={{height:"450px", width:"500px"}} src={Founder_img} alt="founder" />
+                        <img className="mx-auto" style={{height:"450px", width:"500px"}} src={Founder_img} alt="founder" />
                     </div>
                     <div className="flex items-center mx-10">
                        <div>

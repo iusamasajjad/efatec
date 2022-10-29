@@ -89,3 +89,21 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
 }
+.ExpandMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color:#202330 ;
+  z-index: 30;
+}
+.z-negative{
+  z-index: -1;
+}
+[data-aos] {
+  z-index: -1;
+}
+[data-aos][data-aos][data-aos-duration="2000"]{
+  z-index: -10;
+}

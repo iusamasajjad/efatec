@@ -2,7 +2,8 @@ import React from "react";
 import Email from "../../assets/images/pro-email.png";
 const Promotion = () => {
     return (
-        <div className="mt-28">
+        <div className="mt-28" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div className="flex justify-center text-center">
                 <div>
                     <p className="text-green-400 text-sm">PROMOTIONAL</p>
