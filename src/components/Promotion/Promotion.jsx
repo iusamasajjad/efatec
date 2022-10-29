@@ -14,7 +14,7 @@ const Promotion = () => {
                 </div>
             </div>
             <div className="flex justify-center my-6">
-                <div className="border w-1/2">
+                <div className="border mx-2 lg:w-1/2">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                         <img className="mx-3" src={Email} alt="email" />

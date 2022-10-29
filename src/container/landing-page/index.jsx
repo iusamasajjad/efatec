@@ -22,7 +22,7 @@ const LandingPage = () => {
         <div className="lg:block hidden">
         <Header />
         </div>
-       <div className="lg:hidden block absolute top-0  right-0 left-0">
+       <div className="lg:hidden block">
        < Hamburger />
        </div>
         <Contact />
