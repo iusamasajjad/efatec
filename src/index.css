@@ -101,9 +101,3 @@ body{
 .z-negative{
   z-index: -1;
 }
-[data-aos] {
-  z-index: -1;
-}
-[data-aos][data-aos][data-aos-duration="2000"]{
-  z-index: -10;
-}

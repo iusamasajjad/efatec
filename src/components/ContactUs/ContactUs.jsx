@@ -13,7 +13,7 @@ const ContactUs = () => {
                     <p className="text-xs text-center">We offer solutions for every requirement. Contact us and see for yourself!</p>
                 </div>
                 <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center mt-10">
-                    <div data-aos="fade-up"
+                    <form data-aos="fade-up"
                         data-aos-anchor-placement="center-bottom" className="mx-8">
                         <div className="border-b border-gray-600 z-10 relative mt-5">
                             <div style={{ top: "-13px" }} className="absolute bg-white top-0 z-30 left-3">
@@ -21,7 +21,7 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div className="py-4 border-b border-gray-600">
-                            <input className="outline-none font-bold ml-3" type="Name" placeholder="Jonny Depp" />
+                            <input className="outline-none font-bold ml-3" type="text" placeholder="Jonny Depp" />
                         </div>
                         <div className="py-4 border-b border-gray-400">
                             <input className="outline-none font-bol ml-3" type="email" placeholder="Email" />
@@ -47,7 +47,7 @@ const ContactUs = () => {
                                 <span class="checkmark"></span>
                             </div>
                         </div>
-                    </div>
+                    </form>
                     <div data-aos="fade-left" data-aos-duration="3000" className="mx-8">
                         <div className="border border-dashed ">
                             <p className="text-xl text-center py-5 font-extrabold">UPLOAD FILE</p>
