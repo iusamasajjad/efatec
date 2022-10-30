@@ -7,16 +7,16 @@ const ContactUs = () => {
             <div>
                 <div className="flex justify-center items-center">
                     <p className="lg:text-5xl text-lg font-black text-center">CONTACT US</p>
-                    <img data-aos="flip-left" className="w-20 relative bottom-5 left-4" src={Arrow} alt="arrow" />
+                    <img data-aos="flip-left" className="w-20 z-inhrt relative bottom-5 left-4" src={Arrow} alt="arrow" />
                 </div>
                 <div className="flex justify-center">
                     <p className="text-xs text-center">We offer solutions for every requirement. Contact us and see for yourself!</p>
                 </div>
                 <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center mt-10">
-                    <form data-aos="fade-up"
+                    <form data-aos="fade-up z-inhrt"
                         data-aos-anchor-placement="center-bottom" className="mx-8">
-                        <div className="border-b border-gray-600 z-10 relative mt-5">
-                            <div style={{ top: "-13px" }} className="absolute bg-white top-0 z-30 left-3">
+                        <div className="border-b border-gray-600 z-negative relative mt-5">
+                            <div style={{ top: "-13px" }} className="absolute bg-white top-0 z-negative left-3">
                                 <p className="bg-white px-2">Name</p>
                             </div>
                         </div>
@@ -40,15 +40,15 @@ const ContactUs = () => {
                         <div className="py-4 border-b border-gray-400">
                             <textarea className="outline-none font-bol ml-3 w-full" type="text" placeholder="Message" />
                         </div>
-                        <div className="flex items-center py-3 px-2">
-                            <div class="containerr ">
+                        <div className="flex z-negative items-center py-3 px-2">
+                            <div class="containerr z-inhrt">
                                 <p className="font-bold">I agree that my data will only be used in connection with an order</p>
                                 <input type="radio" checked="checked" name="radio" />
                                 <span class="checkmark"></span>
                             </div>
                         </div>
                     </form>
-                    <div data-aos="fade-left" data-aos-duration="3000" className="mx-8">
+                    <div data-aos="fade-left" data-aos-duration="3000" className="mx-8 z-inhrt">
                         <div className="border border-dashed ">
                             <p className="text-xl text-center py-5 font-extrabold">UPLOAD FILE</p>
                             <div className="flex justify-center py-5">

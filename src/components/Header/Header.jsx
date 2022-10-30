@@ -10,9 +10,9 @@ const Header =()=>{
                     </li>
                 </ul>
                 <ul className="flex items-center">
-                    <li className="mr-8 border-b border-gray-700 font-bold">OPEN MENU</li>
-                    <li className="mr-8 border-b border-gray-700 hidden lg:block font-bold">PRODUKTE  </li>
-                    <li className="mr-8 border-b border-gray-700 hidden lg:block font-bold">INFO@EFATEC.DE</li>
+                    <li className="mr-8 border-b cursor-pointer border-gray-700 font-bold">OPEN MENU</li>
+                    <li className="mr-8 border-b cursor-pointer border-gray-700 hidden lg:block font-bold">PRODUKTE  </li>
+                    <li className="mr-8 border-b cursor-pointer border-gray-700 hidden lg:block font-bold">INFO@EFATEC.DE</li>
                     <div className="flex items-center">
                     <li className="mr-8 font-bold">
                     <Link to ={"/Worker"}>KONTAKT</Link>

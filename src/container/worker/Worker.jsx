@@ -1,4 +1,4 @@
-import React from "react";
+
 import Header from "../../components/Header/Header";
 import SideHamburger from "../../components/SideHamburger/SideHamburger";
 import Hero from "../../components/Hero/Hero";
@@ -7,6 +7,7 @@ import Technise from "../../components/Technise/Technise";
 import Option from "../../components/Option/Option";
 import Hamburger from "../../components/hamburger/hamburger";
 const Worker = () =>{
+
     return(
         <div>
             <div className="overflow-hidden">

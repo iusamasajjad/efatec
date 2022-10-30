@@ -9,9 +9,16 @@ import Employees from "../../components/Employees/Employees";
 import Promotion from "../../components/Promotion/Promotion";
 import Footer from "../../components/Footer/Footer";
 import Hamburger from "../../components/hamburger/hamburger";
+import { useRef } from "react";
 
 
 const LandingPage = () => {
+
+  
+  const myRef = useRef(null);
+  const executeScroll = () => {
+    myRef.current.scrollIntoView()
+  }
     return (
       <div>
         <div className="fixed hidden lg:block left-0 top-0 bottom-0 w-32">
@@ -25,8 +32,8 @@ const LandingPage = () => {
        <div className="lg:hidden block">
        < Hamburger />
        </div>
-        <Contact />
-        <Location />
+        <Contact executeScroll={executeScroll} />
+        <Location  myRef={myRef}/>
         <ContactUs />
         <Founder />
         <Employees />

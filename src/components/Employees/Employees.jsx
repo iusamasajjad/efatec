@@ -4,7 +4,7 @@ import Laptop_girl from "../../assets/images/laptop-girl.png";
 import men from "../../assets/images/men.png";
 const Employees =()=>{
     return(
-        <div className="mt-28">
+        <div className="mt-28 z-negative">
             <div className="flex justify-center items-center">
                     <div>
                     <p className="text-5xl font-black text-center">Employees</p>
@@ -12,7 +12,7 @@ const Employees =()=>{
                     </div>
                 </div>
                 <div className="flex flex-col sm:flex-col lg:flex-row md:flex-col justify-center mt-12">
-                    <div data-aos="zoom-in">
+                    <div data-aos="fade-right" className="z-inhrt">
                         <div>
                             <img className="mx-auto" src={Smiling_girl} alt="smilling" />
                         </div>
@@ -21,7 +21,7 @@ const Employees =()=>{
                             <p className="text-gray-500 mx-auto lg:mx-0 w-64 text-sm">We plan, we strategize, we sketch, we do research.</p>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-up" className="mx-8">
+                    <div data-aos="fade-left" className="mx-8 z-inhrt">
                         <div>
                             <img className="mx-auto" src={Laptop_girl} alt="smilling" />
                         </div>
@@ -30,7 +30,7 @@ const Employees =()=>{
                             <p className="text-gray-500 mx-auto lg:mx-0 w-64  text-sm">We plan, we strategize, we sketch, we do research..</p>
                         </div>
                     </div>
-                    <div data-aos="zoom-in-down">
+                    <div data-aos="fade-right" className="z-inhrt">
                         <div>
                             <img className="mx-auto" src={men} alt="smilling" />
                         </div>

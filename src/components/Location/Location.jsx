@@ -3,16 +3,16 @@ import map from "../../assets/images/map.png"
 import address from "../../assets/images/address.png"
 import phone from "../../assets/images/phone.png"
 import email from "../../assets/images/email.png"
-const Location = () => {
+const Location = (props) => {
     return (
-        <div className="mt-20">
-            <div data-aos="flip-left"
+        <div ref={props.myRef} className="mt-20 z-negative">
+            <div   className="mx-auto z-negative">
+                <img  data-aos="fade-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000" className="mx-auto">
-                <img className="w-full" src={map} alt="map" />
+     data-aos-duration="2000" className="w-full z-inhrt" src={map} alt="map" />
             </div>
             <div  className="flex flex-col sm:flex-col md:flex-col lg:flex-row mx-auto justify-between w-4/5">
-                <div data-aos="fade-right" className="border lg:w-1/4 mt-3 flex justify-center text-center">
+                <div data-aos="fade-right" className="border z-inhrt lg:w-1/4 mt-3 flex justify-center text-center">
                     <div>
                         <div className="border w-fit mx-auto mt-4 px-6 py-6 flex justify-center items-center">
                             <img src={address} alt="address" />
@@ -23,7 +23,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-down" className="border lg:w-1/4 mt-3 flex justify-center text-center">
+                <div data-aos="fade-down" className="border z-inhrt lg:w-1/4 mt-3 flex justify-center text-center">
                     <div>
                         <div className="border w-fit mx-auto mt-4 px-6 py-6 flex justify-center items-center">
                             <img src={phone} alt="address" />
@@ -37,7 +37,7 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-left" className="border lg:w-1/4 mt-3 flex justify-center text-center">
+                <div data-aos="fade-left" className="border z-inhrt lg:w-1/4 mt-3 flex justify-center text-center">
                     <div>
                         <div className="border w-fit mx-auto mt-4 px-6 py-6 flex justify-center items-center">
                             <img src={email} alt="address" />

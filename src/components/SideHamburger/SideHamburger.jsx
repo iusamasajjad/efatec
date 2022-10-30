@@ -15,7 +15,7 @@ const SideHamburger =(props)=>{
         <ExpandMenu toggle={menuClicked} />
         <div className="relative z-40 hidden lg:block">
             <div className="border-r h-screen flex justify-center items-center">
-                <div onClick={HandleMenuClicked}>
+                <div className="cursor-pointer" onClick={HandleMenuClicked}>
                 <img src={bar} alt="bar" />
                 </div>
             </div>

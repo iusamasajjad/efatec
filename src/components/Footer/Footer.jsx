@@ -5,7 +5,7 @@ import efatec from "../../assets/images/efatec.png";
 const Footer = ()=>{
     return(
        <div style={{backgroundColor:"#202330"}}>
-         <div  className=" flex justify-center">
+         <div  className="lg:h-screen flex items-center justify-center">
             <div className="flex flex-col lg:flex-row py-28">
                 <div className="w-32 mr-10">
                     <img src={logo} alt="logo" />

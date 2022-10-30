@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import './App.css';
 
 
-function App() {
+export default function App() {
   return (
     <div>
       <BrowserRouter>
@@ -21,7 +21,6 @@ function App() {
   );
 }
 
-export default App;
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

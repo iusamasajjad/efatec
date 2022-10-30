@@ -101,3 +101,12 @@ body{
 .z-negative{
   z-index: -1;
 }
+.z-inhrt{
+  z-index: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+[flip-down]{
+  z-index: -22222222222222;
+}
