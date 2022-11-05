@@ -4,7 +4,7 @@ import electric from "../../assets/images/electric.png"
 import arrow from "../../assets/images/arrow-up.png";
 const Option = () => {
     return (
-        <div className="h-screen z-negative">
+        <div className="lg:h-screen z-negative">
             <div className="flex justify-center items-center mt-12">
                 <p className="text-5xl font-black text-center">OptioNEN</p>
                 <img data-aos="fade-right" className="w-20 relative bottom-5 left-4" src={Arrow} alt="arrow" />

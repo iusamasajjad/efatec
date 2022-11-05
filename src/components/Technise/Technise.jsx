@@ -29,7 +29,7 @@ const Technise = () => {
             <div className="flex lg:flex-row flex-col justify-center">
                 <div className="bg-yellow w-1/2">
                 </div>
-                <div className="lg:mx-10 py-10">
+                <div className="lg:mx-10 mx-5 py-10">
                     <div>
                         <p className="text-xl text-black font-extrabold">TECHNISCHE INFORMATIONEN</p>
                     </div>
@@ -77,6 +77,7 @@ const Technise = () => {
                     <div className="mt-12">
                         <p data-aos="fade-left" className="text-gray-500">Batteriesystem</p>
                         <div className="flex flex-col items-center lg:flex-row">
+                            <div className="flex flex-row justify-center lg:justify-start lg:flex-row items-center">
                             <div data-aos="fade-right" className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={dable_bat} alt="engine" />
@@ -91,8 +92,10 @@ const Technise = () => {
                                     <p className="text-lg font-bold text-black">120 AH</p>
                                     <p className="text-xs text-gray-500">KAPAZITÄT</p>
                                 </div>
-                                <div style={{ width: "2px" }} className="h-6 bg-gray-400 ml-8"></div>
+                                <div style={{ width: "2px" }} className="h-6 hidden lg:block bg-gray-400 ml-8"></div>
                             </div>
+                            </div>
+                            <div className="flex flex-row justify-center lg:justify-start lg:flex-row items-center">
                             <div data-aos="fade-left" className="text-center flex items-center mt-3 lg:mt-0 lg:ml-3">
                                 <div>
                                     <img className="mx-auto" src={H} alt="engine" />
@@ -108,11 +111,12 @@ const Technise = () => {
                                     <p className="text-xs text-gray-500">LADEGERÄT</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                     <div className="mt-12">
                         <p data-aos="fade-left" className="text-gray-500">Leistung</p>
-                        <div className="flex">
+                        <div className="flex flex-row lg:flex-row justify-center lg:justify-start items-center">
                             <div data-aos="fade-right" className="text-center flex items-center">
                                 <div>
                                     <img className="mx-auto" src={wheel} alt="engine" />
