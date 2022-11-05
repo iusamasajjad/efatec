@@ -35,7 +35,7 @@ const Option = () => {
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row">
-                    <div data-aos="flip-right" className=" ml-8">
+                    <div data-aos="flip-right" className="relative z-negative ml-8">
                         <img src={electric} alt="battery" />
                     </div>
                     <div className="w-full px-4 py-4">
@@ -78,7 +78,7 @@ const Option = () => {
                         </div>
                        </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex relative z-negative">
                     <div data-aos="flip-right" className="lg:w-1/5 flex flex-col justify-center items-center lg:ml-8">
                         <img width={"130px"} src={electric} alt="electric" />
                         <p className="text-black text-center text-xs font-bold">Erweiterte Batteriekapazität 195 Ah, anstatt 120 Ah</p>

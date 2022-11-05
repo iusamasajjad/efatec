@@ -5,9 +5,10 @@ const Header =()=>{
         <div>
             <nav className="py-8 flex justify-between">
                 <ul>
-                    <li className="w-32">
+                    <Link to={"/"}><li className="w-32">
                     <img src={logo} alt="logo" />
                     </li>
+                    </Link>
                 </ul>
                 <ul className="flex items-center">
                     <li className="mr-8 border-b cursor-pointer border-gray-700 font-bold">OPEN MENU</li>

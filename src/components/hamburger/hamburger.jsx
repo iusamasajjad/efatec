@@ -9,9 +9,11 @@ const Hamburger = () => {
                     <img src={bar} alt="bar" />
                 </div>
                 <ul>
+                    <Link to={"/"}>
                     <li className="w-32">
                         <img src={logo} alt="logo" />
                     </li>
+                    </Link>
                 </ul>
                 <ul className="flex items-center">
                     <div className="flex items-center">

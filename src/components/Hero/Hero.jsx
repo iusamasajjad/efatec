@@ -20,7 +20,7 @@ const Hero = ()=>{
         })
     },[])
     return(
-        <div className="bg-black">
+        <div className="bg-black relative z-negative">
              <div className="lg:ml-12 lg:pl-12 z-negative container mx-auto">
              
                 <div className="lg:ml-12">
